@@ -1,0 +1,80 @@
+.uploadButton {
+    width: 100%;
+    padding: 10px;
+    max-width: 380px;
+    height: 80px;
+    background-color: #36454F;
+    border: 2px dashed #d1d5db;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+    background-color: #5f798a;
+}
+
+.uploadIcon {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.uploadText {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.imagePreview {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.removeButton {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: #ef4444;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.loadingContainer {
+    width: 100%;
+    padding: 10px;
+    max-width: 380px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #36454F;
+    border-radius: 8px;
+}
+
+.loadingIcon {
+    animation: spin 1s linear infinite;
+    color: #01c8fa;
+    margin-bottom: 8px;
+}
+
+.loadingText {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
